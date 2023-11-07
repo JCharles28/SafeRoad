@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+* {
+  font-family: "Inter", sans-serif;
+}
+
+/* Balises & Classes générales */
+
+.container {
+  width: 50%;
+  padding: 7px 15px;
+  border: 3.75px groove #000;
+  border-radius: 25px 3.5px;
+  background-color: #fff;
+  margin: 10vh auto;
+  transition: scale 1s;
+}
+
+.container:hover {
+  scale: 1.005;
+  transition: scale 0.5s;
+}
+
+.ctn-height {
+  height: fit-content;
+}
+
+p {
+  font-size: 65%;
+}
+
+button {
+  font-size: 72.5%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+button span {
+  margin: 0 auto;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  z-index: 999;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: rgb(244, 241, 244);
+  border-bottom: 1.5px solid #000;
+  position: relative;
+  margin: 0 auto;
+  margin: 0 auto;
+  height: 25%;
+  width: 100%;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 25%;
+  width: 100%;
+  padding: 0;
+}
+
+header nav ul img {
+  width: 100px;
+  margin: 0 13px 0 0;
+}
+
+header nav ul li {
+  margin: 0 0.25%;
+  list-style: none;
+  text-decoration: none;
+}
+
+.link-part {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Introduction */
+.Intro {
+  margin: 25vh 0 0 0;
+}
+
+.Intro .container p {
+  text-align: center;
+}
+
+.Intro .container img {
+  border: 1px solid #000;
+  border-radius: 7.5px;
+  width: 50%;
+  height: 50%;
+  margin: 10px;
+  transition: 0.35s scale;
+  border: 1.9px solid #ffa500;
+}
+
+
+/* Projet */
+
+.description-project {
+  width: 75%;
+  text-align: center;
+  margin: 3% auto;
+}
+
+
+/* Formulaire */
+
+.Forms {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form .block-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5vh 0;
+}
+
+.btn-envoyer {
+  margin: 5px;
+  border: 0.5 solid #000000;
+  border-radius: 5px;
+  padding: 6px 10px;
+}
+
+.btn-envoyer:active {
+  transform: scale(0.9);
+}
+
+.btn-envoyer:hover {
+  animation: shake 1.5s;
+}
+
+/* Teams */
+
+.grid-container {
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-team,
+.grid-mentor {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-partner {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-item {
+  margin: 10px;
+}
+
+.grid-item .cadre-img {
+  width: 100%;
+}
+
+.grid-item .cadre-img img {
+  object-fit: cover;
+  width: 15%;
+  height: 15%;
+}
+
+/* Pharse d'accroche */
+
+.p-a {
+  animation: flash 3.5s infinite;
+}
+
+.p-a span:hover {
+  color: #000;
+  text-shadow: whitesmoke 1px 1px 10px;
+  scale: 1.1;
+  transition: background-color 0.2s, scale 0.2s, color 0.15s;
+}
+
+/* Boutons */
+
+.btn-style {
+  background-color: #fff;
+  color: #000;
+  border: 0.5 solid #000000;
+  border-radius: 5px;
+  padding: 6px 10px;
+  margin: 5px;
+  transition: 1s scale;
+}
+
+.btn-style:hover {
+  background-color: #1a237e;
+  color: #fff;
+  border: 0.5 solid #000000;
+  border-radius: 5px;
+  margin: 5px;
+  scale: 1.1;
+  transition: 0.5s scale, background-color 0.5s, color 0.25s;
+}
+
+/* Effets */
+
+.ef-retro:hover {
+  scale: 1.05;
+  box-shadow: 0 0 6px #ffa500;
+  transition: 0.4s scale, 4s box-shadow;
+  animation: shake 0.2s;
+}
+
+span.sf {
+  color: #000;
+  transition: 1s color;
+}
+
+span.sf:hover {
+  color: orange;
+  font-weight: bold;
+  scale: 1.1;
+  transition: 0.2s color, font-weight 0.2s background-color 0.2s, scale 0.2s;
+}
+
+@keyframes flash {
+  0% {
+    color: #fff;
+  }
+
+  10% {
+    color: #000;
+    text-shadow: #fff 0 0 5px;
+  }
+  90% {
+    color: #000;
+    text-shadow: #fff 0 0 5px;
+  }
+
+  100% {
+    color: #fff;
+  }
+}
+
+@keyframes shake {
+  50% {
+    transform: rotate(2.5deg);
+  }
+
+  100% {
+    transform: rotate(-2.5deg);
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 80%;
+    padding: 7px 10px;
+  }
+
+  .grid-item .cadre-img img {
+    width: 50%;
+    height: 50%;
+  }
+
+  p {
+    font-size: 100%;
+  }
+
+  header nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav ul li {
+    margin: 0;
+  }
+
+  header nav ul img {
+    width: 15%;
+    margin-right: 2%;
+  }
+
+  header nav ul li button {
+    font-size: 75%;
+    font-weight: 400;
+  }
+
+  .Forms label {
+    font-size: 65%;
+  }
+}
+
+/* Styles spécifiques pour les tablettes */
+@media (max-width: 800px) {
+  .container {
+    width: 90%;
+    padding: 7px 10px;
+  }
+
+  .grid-item .cadre-img img {
+    width: 50%;
+    height: 50%;
+  }
+  p {
+    font-size: 75%;
+  }
+
+  header nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav ul li {
+    margin: 0;
+  }
+
+  header nav ul img {
+    width: 15%;
+    margin-right: 2%;
+  }
+
+  header nav ul li button {
+    font-size: 75%;
+    font-weight: 400;
+  }
+
+  .Forms label {
+    font-size: 65%;
+  }
+}
+
+/* Styles spécifiques pour les smartphones */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 5px 7px;
+  }
+
+  .grid-item .cadre-img img {
+    width: 50%;
+    height: 50%;
+  }
+
+  p {
+    font-size: 58%;
+  }
+
+  header nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav ul li {
+    margin: 0;
+  }
+
+  header nav ul img {
+    width: 15%;
+    margin-right: 2%;
+  }
+
+  header nav ul li button {
+    font-size: 43%;
+    font-weight: 500;
+  }
+
+  .Forms label {
+    font-size: 65%;
+  }
+}
