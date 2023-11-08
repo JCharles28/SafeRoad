@@ -35,8 +35,9 @@ export default function Mentors() {
             <div className="cadre-img">
               <img src={p.image} alt={p.name} />
             </div>
-            <p>{p.role}</p>
             <p>{p.name}</p>
+            <p>{p.role}</p>
+            
           </div>
         ))}
       </div>
