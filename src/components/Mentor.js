@@ -36,6 +36,7 @@ export default function Mentors() {
               <img src={p.image} alt={p.name} />
             </div>
             <p>{p.role}</p>
+            <p>{p.name}</p>
           </div>
         ))}
       </div>
