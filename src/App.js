@@ -35,7 +35,7 @@ export default class App extends React.Component {
   handleSectionClick = (part) => {
     const targetSection = this.state.parts[part];
     if (targetSection) {
-      targetSection.scrollIntoView({ behavior: "smooth" });
+      targetSection.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
     }
     this.setState({
       activeSection: part,
