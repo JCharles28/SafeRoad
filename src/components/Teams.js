@@ -45,7 +45,7 @@ export default function Teams() {
       </p>
       <p>
         Notre objectif est de vous proposer une solution innovante pour
-        améliorer la sécurité routière.
+        améliorer la sécurité routière.🚦
       </p>
 
       <div className="grid-container grid-team">
