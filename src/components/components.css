@@ -12,7 +12,6 @@
   border-radius: 25px 3.5px;
   background-color: #fff;
   margin: 10vh auto;
-  transition: scale 1s;
 }
 
 .ctn-height {
@@ -177,6 +176,13 @@ form .block-form {
 
 .grid-item {
   margin: 10px;
+  border-radius: 3px;
+}
+
+.grid-item:hover {
+  scale: 1.1;
+  border: 1px solid #000;
+  transition: scale 0.2s, border 0.15s;
 }
 
 .grid-item .cadre-img {
