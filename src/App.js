@@ -1,4 +1,5 @@
 import "./App.css";
+import { useTransition } from "react-transition-group";
 import Forms from "./components/Forms";
 import Intro from "./components/Intro";
 import Header from "./components/Header";
@@ -32,6 +33,14 @@ export default class App extends React.Component {
     this.setState({ parts });
   }
 
+  const [showNewComponent, setShowNewComponent] = useState(false);
+
+  const transition = useTransition({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    duration: 1000,
+  });
+
   handleSectionClick = (part) => {
     const targetSection = this.state.parts[part];
     if (targetSection) {
@@ -46,7 +55,9 @@ export default class App extends React.Component {
     return (
       <div className="App">
         <Header handleSectionClick={this.handleSectionClick} />
+
         <Intro />
+
         <div id="ls-projet" className={this.state.activeSection}>
           <Project />
         </div>
@@ -64,6 +75,7 @@ export default class App extends React.Component {
         </div>
 
         <PhraseAccroche />
+
         <div id="ls-contact" className={this.state.activeSection}>
           <Forms />
         </div>
