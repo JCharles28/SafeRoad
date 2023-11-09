@@ -176,6 +176,7 @@ form .block-form {
 
 .grid-item {
   margin: 10px;
+  transition: scale 1s;
 }
 
 .grid-item:hover {
