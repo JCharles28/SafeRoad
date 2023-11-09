@@ -23,7 +23,7 @@ export default function Mentors() {
 
       <p>
         Nous sommes mentorer par des professionnels expérimentés en terme de
-        Data et IA.
+        Data, en IA, en entreprenariat..
       </p>
       <p>
         En effet, cet accompagnement nous permet d'être dans les meilleurs
