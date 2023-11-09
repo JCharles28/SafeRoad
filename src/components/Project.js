@@ -4,31 +4,16 @@ export default function Project() {
     return (
       <div className="container">
         <h1>Projet</h1>
+       
+        
         <p className="description-project">
-          Le projet <span className="sf">SaferRoad</span> est un projet qui a pour but de réduire le nombre
-          d'accidents de la route. Pour cela, nous avons créé un système
-          d'intelligence artificielle qui permet de détecter les comportements
-          à risque des conducteurs. Ce système est basé sur des caméras
-          installées dans les voitures. Il est capable de détecter les
-          comportements à risque tels que le non-respect des distances de
-          sécurité, le non-respect des limitations de vitesse, le non-respect
-          des feux de signalisation, etc. Lorsqu'un comportement à risque est
-          détecté, le système envoie une alerte au conducteur pour l'avertir du
-          danger. Si le conducteur ne réagit pas, le système peut prendre le
-          contrôle de la voiture pour éviter l'accident.
-        </p>
-        <p className="description-project">
-          Le système est composé de deux parties : une partie logicielle et une
-          partie matérielle. La partie logicielle est composée d'un logiciel
-          d'intelligence artificielle qui permet de détecter les comportements à
-          risque. La partie matérielle est composée d'un système embarqué qui
-          permet de communiquer avec le logiciel d'intelligence artificielle et
-          d'envoyer les alertes au conducteur.
-        </p>
-        <p className="description-project">
-          Le système est actuellement en cours de développement. Il sera
-          disponible dans les prochaines semaines.
-        </p>
+              Notre système d'intelligence artificielle révolutionnaire pour la sécurité routière sera conçu pour détecter et prévenir les comportements dangereux au volant.
+              Grâce à des capteurs, notre IA surveille attentivement les actions du conducteur, telles que l'utilisation du téléphone, la consommation de cigarettes ou les signes de somnolence.
+              Lorsqu'un comportement risqué est détecté, notre IA déclenche une alarme sonore immédiate, attirant ainsi l'attention du conducteur et l'incitant à adopter un comportement plus sûr.
+              Avec notre solution innovante, nous visons à améliorer la sécurité sur les routes et à réduire les accidents liés à des distractions ou à la fatigue.
+              Faites confiance à <span className="sf">SaferRoad</span> pour vous aider à conduire en toute sécurité !
+        </p>          
+
       </div>
   );
 }
