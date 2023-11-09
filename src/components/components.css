@@ -15,11 +15,6 @@
   transition: scale 1s;
 }
 
-.container:hover {
-  scale: 1.005;
-  transition: scale 0.5s;
-}
-
 .ctn-height {
   height: fit-content;
 }
@@ -395,4 +390,27 @@ span.sf:hover {
   .Forms label {
     font-size: 65%;
   }
+}
+
+@media (max-width: 380px) {
+
+  header nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav ul li {
+    margin: 0;
+  }
+
+  header nav ul img {
+    width: 13%;
+    margin-right: 2%;
+  }
+
+  header nav ul li button {
+    font-size: 40%;
+    font-weight: 520;
+  }
+
 }
