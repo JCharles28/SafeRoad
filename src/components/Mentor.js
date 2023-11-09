@@ -1,6 +1,6 @@
 import "./components.css";
-// import imgZakaria from "";
-// import imgVincent from "";
+// import imgZakaria from "../ressources/img/mentorat-zak.png";
+// import imgMorad from "../ressources/img/mentorat-morad.png";
 
 
 const listMentors = [
@@ -10,9 +10,9 @@ const listMentors = [
     // image: imgZakaria,
   },
   {
-    name: "Vincent RENARD",
-    role: "Expert en Data & IA, Freelance",
-    // image: imgVincent,
+    name: "Morad ATTIK",
+    role: "Co-fondateur d'Evolukid",
+    // image: imgMorad,
   },
 ];
 
