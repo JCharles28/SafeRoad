@@ -7,12 +7,12 @@ const listMentors = [
   {
     name: "Zakaria EL KHAMMAR ",
     role: "Data Scientist, Orange",
-    // image: imgZakaria,
+    image: imgZakaria,
   },
   {
     name: "Morad ATTIK",
     role: "Co-fondateur d'Evolukid",
-    // image: imgMorad,
+    image: imgMorad,
   },
 ];
 
