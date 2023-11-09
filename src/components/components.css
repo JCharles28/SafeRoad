@@ -232,7 +232,7 @@ form .block-form {
 /* Effets */
 
 .ef-retro:hover {
-  scale: 1.05;
+  scale: 1.025;
   box-shadow: 0 0 6px #ffa500;
   transition: 0.4s scale, 4s box-shadow;
   animation: shake 0.2s;
