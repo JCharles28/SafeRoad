@@ -176,13 +176,11 @@ form .block-form {
 
 .grid-item {
   margin: 10px;
-  border-radius: 3px;
 }
 
 .grid-item:hover {
-  scale: 1.1;
-  border: 1px solid #000;
-  transition: scale 0.2s, border 0.15s;
+  scale: 1.05;
+  transition: scale 0.2s;
 }
 
 .grid-item .cadre-img {
