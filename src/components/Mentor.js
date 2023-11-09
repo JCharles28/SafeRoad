@@ -1,6 +1,6 @@
 import "./components.css";
-// import imgZakaria from "../ressources/img/mentorat-zak.png";
-// import imgMorad from "../ressources/img/mentorat-morad.png";
+import imgZakaria from "../ressources/img/mentorat-zak.png";
+import imgMorad from "../ressources/img/mentorat-morad.png";
 
 
 const listMentors = [
