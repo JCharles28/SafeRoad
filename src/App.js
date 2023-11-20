@@ -1,4 +1,4 @@
-import "./App.css";
+import React, { useState, useEffect } from "react";
 import { useTransition } from "react-transition-group";
 import Forms from "./components/Forms";
 import Intro from "./components/Intro";
@@ -6,7 +6,6 @@ import Header from "./components/Header";
 import Teams from "./components/Teams";
 import Project from "./components/Project";
 import PhraseAccroche from "./components/PhraseAccroche";
-import React from "react";
 import Partners from "./components/Partners";
 import Mentors from "./components/Mentor";
 
@@ -22,6 +21,7 @@ export default class App extends React.Component {
         "ls-partenaires": null,
         "ls-mentorat": null,
       },
+      showNewComponent: false, // Ajout de l'état showNewComponent
     };
   }
 
@@ -32,14 +32,6 @@ export default class App extends React.Component {
     }, {});
     this.setState({ parts });
   }
-
-  const [showNewComponent, setShowNewComponent] = useState(false);
-
-  const transition = useTransition({
-    from: { opacity: 0 },
-    to: { opacity: 1 },
-    duration: 1000,
-  });
 
   handleSectionClick = (part) => {
     const targetSection = this.state.parts[part];
@@ -52,6 +44,14 @@ export default class App extends React.Component {
   };
 
   render() {
+    const { showNewComponent } = this.state;
+
+    const transitions = useTransition(showNewComponent, null, {
+      from: { opacity: 0 },
+      enter: { opacity: 1 },
+      leave: { opacity: 0 },
+    });
+
     return (
       <div className="App">
         <Header handleSectionClick={this.handleSectionClick} />
