@@ -44,14 +44,6 @@ export default class App extends React.Component {
   };
 
   render() {
-    const { showNewComponent } = this.state;
-
-    const transitions = useTransition(showNewComponent, null, {
-      from: { opacity: 0 },
-      enter: { opacity: 1 },
-      leave: { opacity: 0 },
-    });
-
     return (
       <div className="App">
         <Header handleSectionClick={this.handleSectionClick} />
