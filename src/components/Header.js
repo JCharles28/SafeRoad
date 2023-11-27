@@ -1,6 +1,6 @@
 import React from "react";
 import "./components.css";
-import logoSR from "../logo-sf1.ico";
+import logoSR from "../logo-vigiroad.png";
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -21,7 +21,7 @@ export default class Header extends React.Component {
         <nav>
           <ul>
             <img className="" src={logoSR} alt="logo" />
-            
+
             <li key="ls-projet">
               <button
                 onClick={() => this.props.handleSectionClick("ls-projet")}
@@ -63,6 +63,21 @@ export default class Header extends React.Component {
                 }`}
               >
                 Mentorat
+              </button>
+            </li>
+
+            <li key="ls-sensibilisation">
+              <button
+                onClick={() =>
+                  this.props.handleSectionClick("ls-sensibilisation")
+                }
+                className={`btn-style ${
+                  this.state.activeSection === "ls-sensibilisation"
+                    ? "active"
+                    : ""
+                }`}
+              >
+                Sensibilisation
               </button>
             </li>
 

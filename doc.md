@@ -8,7 +8,7 @@
 2. Ne pas simplement se focaliser sur des projets techniques et complets, mais aussi savoir les présenter de manière attrayante.
 
 ## Approche du projet :
-1. Considérer `le projet SaferRoad comme une histoire à raconter`.
+1. Considérer `le projet VigiRoad comme une histoire à raconter`.
 2. `Éviter de vendre le projet comme un manuel d'utilisation`.
 
 ## Data Processing :

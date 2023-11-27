@@ -12,9 +12,10 @@ export default function Forms() {
     <div className="container ctn-height">
       <div className="Forms">
         <h1>Formulaire de contact</h1>
+        <p>Vous souhaitez nous contacter ?</p>{" "}
         <p>
-          Vous souhaitez nous contacter ? Remplissez le formulaire ci-dessous et
-          nous vous répondrons dans les plus brefs délais.{" "}
+          Remplissez le formulaire ci-dessous et notre équipe vous répondrons au
+          plus vite !
         </p>
         <form
           action="https://formsubmit.co/contact.infojeancharles@gmail.com"

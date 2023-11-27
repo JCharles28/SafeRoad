@@ -3,7 +3,7 @@ import "./components.css";
 import naj from "../ressources/img/1-najlae.JPG";
 import walid from "../ressources/img/3-walid.JPG";
 import jean from "../ressources/img/4-jean-charles.JPG";
-import zak from "../ressources/img/2-zakaria.jpg"
+import zak from "../ressources/img/2-zakaria.jpg";
 
 const teamMembers = [
   {
@@ -28,26 +28,26 @@ const teamMembers = [
     role: "Chef de projet",
     image: walid, // Utilise le chemin d'accès direct ici
   },
-
 ];
 
 export default function Teams() {
   return (
     <div className="container">
       <h1>
-        Equipe <span className="sf">SaferRoad</span>
+        Equipe <span className="sf">VigiRoad</span>
       </h1>
-
       <p>
         Notre équipe est composée de profils variés : développeurs, chef de
-        projet, data analyst. En effet, nos compétences complémentaires nous ont
-        permis de tirer le meilleur de chacun d'entre nous.
+        projet, data analyst.
       </p>
       <p>
+        En effet, nos aptitudes complémentaires nous ont permis de tirer le
+        meilleur les uns des autres.
+      </p>
+      {/* <p>
         Notre objectif est de vous proposer une solution innovante pour
         améliorer la sécurité routière.🚦
-      </p>
-
+      </p> */}
       <div className="grid-container grid-team">
         {teamMembers.map((member) => (
           <div className="grid-item" key={member.name}>

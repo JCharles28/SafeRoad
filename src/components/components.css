@@ -15,6 +15,16 @@
   text-align: center;
 }
 
+.container-sensibilisation {
+  width: 65%;
+  padding: 9px 15px;
+  border: 3.75px groove #000;
+  border-radius: 25px 3.5px;
+  background-color: #fff;
+  margin: 10vh auto;
+  text-align: center;
+}
+
 .ctn-height {
   height: fit-content;
 }
@@ -102,8 +112,9 @@ header nav ul li {
   width: 50%;
   height: 50%;
   margin: 10px;
-  transition: 0.35s scale;
-  border: 1.9px solid #ffa500;
+  padding: 5px;
+  transition: 1s all;
+  border: 1.9px solid rgb(59, 235, 177);
 }
 
 
@@ -195,18 +206,22 @@ form .block-form {
   height: 25%;
 }
 
+/* Sensibilisation */
+
+iframe {
+  width: 700px;
+  height: 500px;
+  overflow: hidden;
+
+}
+
+.container-sensibilisation div {
+  padding: 2%;
+}
+
 /* Pharse d'accroche */
 
-.p-a {
-  animation: flash 3.5s infinite;
-}
 
-.p-a span:hover {
-  color: #000;
-  text-shadow: whitesmoke 1px 1px 10px;
-  scale: 1.1;
-  transition: background-color 0.2s, scale 0.2s, color 0.15s;
-}
 
 /* Boutons */
 
@@ -221,21 +236,22 @@ form .block-form {
 }
 
 .btn-style:hover {
-  background-color: #1a237e;
-  color: #fff;
+  background-color: #7FFFD4;
+  color: #000;
   border: 0.5 solid #000000;
   border-radius: 5px;
   margin: 5px;
   scale: 1.1;
   transition: 0.5s scale, background-color 0.5s, color 0.25s;
+  transition: 0.75s all;
 }
 
 /* Effets */
 
 .ef-retro:hover {
-  scale: 1.025;
-  box-shadow: 0 0 6px #ffa500;
-  transition: 0.4s scale, 4s box-shadow;
+  scale: 1.05;
+  border: 1px groove #7FFFD4;
+  transition: all 0.5s;
   animation: shake 0.2s;
 }
 
@@ -245,7 +261,7 @@ span.sf {
 }
 
 span.sf:hover {
-  color: orange;
+  color: #7FFFD4;
   font-weight: bold;
   scale: 1.1;
   transition: 0.2s color, font-weight 0.2s background-color 0.2s, scale 0.2s;
@@ -272,16 +288,21 @@ span.sf:hover {
 
 @keyframes shake {
   50% {
-    transform: rotate(2.5deg);
+    transform: rotate(1.75deg);
   }
 
   100% {
-    transform: rotate(-2.5deg);
+    transform: rotate(-1.75deg);
   }
 }
 
 @media (max-width: 1000px) {
   .container {
+    width: 80%;
+    padding: 7px 10px;
+  }
+
+  .container-sensibilisation {
     width: 80%;
     padding: 7px 10px;
   }
@@ -310,7 +331,7 @@ span.sf:hover {
   }
 
   header nav ul li button {
-    font-size: 75%;
+    font-size: 68%;
     font-weight: 400;
   }
 
@@ -322,6 +343,11 @@ span.sf:hover {
 /* Styles spécifiques pour les tablettes */
 @media (max-width: 800px) {
   .container {
+    width: 90%;
+    padding: 7px 10px;
+  }
+
+  .container-sensibilisation {
     width: 90%;
     padding: 7px 10px;
   }
@@ -349,7 +375,7 @@ span.sf:hover {
   }
 
   header nav ul li button {
-    font-size: 75%;
+    font-size: 63%;
     font-weight: 400;
   }
 
@@ -361,6 +387,11 @@ span.sf:hover {
 /* Styles spécifiques pour les smartphones */
 @media (max-width: 600px) {
   .container {
+    width: 90%;
+    padding: 5px 7px;
+  }
+
+  .container-sensibilisation {
     width: 90%;
     padding: 5px 7px;
   }
@@ -389,7 +420,7 @@ span.sf:hover {
   }
 
   header nav ul li button {
-    font-size: 43%;
+    font-size: 40%;
     font-weight: 500;
   }
 

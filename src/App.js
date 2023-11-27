@@ -7,6 +7,7 @@ import Project from "./components/Project";
 import PhraseAccroche from "./components/PhraseAccroche";
 import Partners from "./components/Partners";
 import Mentors from "./components/Mentor";
+import Sensibilisation from "./components/Sensibilisation";
 
 export default class App extends React.Component {
   constructor(props) {
@@ -19,6 +20,7 @@ export default class App extends React.Component {
         "ls-contact": null,
         "ls-partenaires": null,
         "ls-mentorat": null,
+        "ls-sensibilisation": null,
       },
       showNewComponent: false, // Ajout de l'état showNewComponent
     };
@@ -35,7 +37,11 @@ export default class App extends React.Component {
   handleSectionClick = (part) => {
     const targetSection = this.state.parts[part];
     if (targetSection) {
-      targetSection.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
+      targetSection.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "center",
+      });
     }
     this.setState({
       activeSection: part,
@@ -66,6 +72,10 @@ export default class App extends React.Component {
         </div>
 
         <PhraseAccroche />
+
+        <div id="ls-sensibilisation" className={this.state.activeSection}>
+          <Sensibilisation />
+        </div>
 
         <div id="ls-contact" className={this.state.activeSection}>
           <Forms />
