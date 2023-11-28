@@ -114,7 +114,7 @@ header nav ul li {
   margin: 10px;
   padding: 5px;
   transition: 1s all;
-  border: 1.9px solid rgb(59, 235, 177);
+  border: 1.9px solid #7FFFD4;
 }
 
 
@@ -153,12 +153,13 @@ form .block-form {
 
 .btn-envoyer {
   margin: 5px;
-  border: 0.5 solid #000000;
+  border: 1px solid #000000;
   border-radius: 5px;
   padding: 6px 10px;
 }
 
 .btn-envoyer:active {
+  border: 1px groove #000000;
   transform: scale(0.9);
 }
 
@@ -193,7 +194,7 @@ form .block-form {
 
 .grid-item:hover {
   scale: 1.05;
-  transition: scale 0.2s;
+  transition: scale 0.75s;
 }
 
 .grid-item .cadre-img {

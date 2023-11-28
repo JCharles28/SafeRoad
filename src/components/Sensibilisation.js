@@ -3,7 +3,7 @@ import "./components.css";
 
 export default function Sensibilisation() {
   return (
-    <div className="container container-sensibilisation">
+    <div className="container-sensibilisation">
       <h1>Sensibilisation</h1>
       <div>
         <h2>Jeu de sensibilisation</h2>
